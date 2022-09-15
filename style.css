@@ -1,9 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat";
+  font-family: 'Roboto Mono';
   list-style-type: none;
 }
 .content {
@@ -41,7 +41,7 @@
     align-items: center;
     justify-content: flex-end;
     position: absolute;
-    left: -31px;
+    left: -20px;
     opacity: 0.1;
     letter-spacing: -0.3px;
     top: 20px;
@@ -65,4 +65,34 @@
     border-left: 1px solid #8a8a8a;
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;
+}
+#digit-panel {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-rows: repeat(4, 90px);
+    margin-top: 20px;
+}
+.button {
+    display: flex;
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c3c5c7;
+    background-color: #e7e7e7;
+    transition: background-colour 0.2s;
+    cursor: pointer;
+
+}
+.button:hover {
+    background-color: #c9ccce;
+
+}
+#operation-panel {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 50 px;
+    margin-top: 20px;
+    gap: 10px; 
 }
