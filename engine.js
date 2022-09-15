@@ -11,8 +11,9 @@ window.addEventListener ('load' , function () {
     let buffer1;
 
     panelDigitButtons.addEventListener ('click', function (event) {
-        // console.log (event.target.dataset.button);
-        if (event.target.dataset.button === "clear") {
+
+        if (event.target.hasAttribute('data-button')) {
+             if (event.target.dataset.button === "clear") {
             display.innerText = 0;  
             argument = 0;
 
@@ -28,6 +29,9 @@ window.addEventListener ('load' , function () {
     //    console.log(parseInt(argument));
 
 
+        }
+       
+      
     })
     
     function Backspace(argument) {
